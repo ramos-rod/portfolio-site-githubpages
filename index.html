@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rodrigo Ramos - Portfolio</title>
+    <style>
+      body {
+        background-color: #333333;
+        color: #f9f9f9;
+        font-family: 'Montserrat', sans-serif;
+		background: linear-gradient(to right, #333350, #050505);
+      }
+	  
+      h1 {
+        color: #f0f0f0;
+        text-align: center;
+        margin-top: 50px;
+        font-weight: 700;
+        font-size: 3rem;
+        letter-spacing: 2px;
+      }
+
+      .box {
+        width: 600px;
+        height: 120px;
+        margin: 0 auto;
+        margin-top: 100px;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+		cursor: pointer; 
+		color: #333333;
+		border: 2px inset #000000;
+		border-radius: 10px;
+      }
+
+      .box h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 5px;
+        padding: 0;
+      }
+	  
+	  .box:hover {
+        background-color: #c8c8c8;
+      }
+	  
+      .small-box {
+        width: 100px;
+        height: 50px;
+        margin-top: 1px;
+		margin-left: 10px;
+		margin-right: 10px;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+		color: #333333;
+		border: 2px inset #000000;
+		border-radius: 10px;
+		
+      }
+
+      .small-box:hover {
+        background-color: #c8c8c8;
+      }
+	  
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+		margin-top: 100px;
+      }
+	  
+	  .wrapper-small {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+		margin-top: 10px;
+      }
+
+      .wrapper > * {
+        margin: 30px;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Rodrigo Ramos</h1>
+	<div class="wrapper-small">
+      <div class="small-box" onclick="window.open('https://linkedin.com/in/rodrigosoaresramos', '_blank')" style="width: 175px;">
+        <h2>LinkedIn</h2>
+      </div>
+      <div class="small-box" onclick="window.open('https://github.com/ramos-rod/', '_blank')" style="width: 175px;">
+        <h2>GitHub</h2>
+      </div>
+    </div>
+	<h1>GitHub - Portfólio de Análise de Dados</h1>
+    <div class="wrapper">
+      <div class="box" onclick="window.open('https://github.com/ramos-rod/analise-de-dados-covid-owid', '_blank')">
+        <h2>Data Analysis Covid-19</h2>
+      </div>
+      <div class="box" onclick="window.open('https://github.com/ramos-rod/webscraping-amazon-powerbi', '_blank')">
+        <h2>Python Web Scraping Amazon CPUs</h2>
+      </div>
+      <div class="box" onclick="window.open('https://github.com/ramos-rod/logistics-business-case-empowerdata', '_blank')">
+        <h2>Logistics Business Case Empowerdata</h2>
+      </div>
+	</div>
+  </body>
+</html>
