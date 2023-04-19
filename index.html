@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodrigo Ramos - Portfolio</title>
     <style>
-      body {
+	    body {
         background-color: #333333;
         color: #f9f9f9;
         font-family: 'Montserrat', sans-serif;
@@ -20,20 +22,21 @@
       }
 
       .box {
-        width: 600px;
-        height: 120px;
-        margin: 0 auto;
-        margin-top: 100px;
-        background-color: #f0f0f0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+		width: 600px;
+		height: 120px;
+		margin: 30px auto;
+		background-color: #f0f0f0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
 		cursor: pointer; 
 		color: #333333;
-		border: 2px inset #000000;
+		border: 2px solid #000000;
 		border-radius: 10px;
-      }
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+		transition: transform 0.2s ease-in-out;
+	  }
 
       .box h2 {
         font-size: 2.5rem;
@@ -43,6 +46,7 @@
       }
 	  
 	  .box:hover {
+		transform: translateY(-5px);
         background-color: #c8c8c8;
       }
 	  
@@ -70,10 +74,11 @@
 	  
       .wrapper {
         display: flex;
+		flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-		margin-top: 100px;
+		margin-top: 40px;
+		gap: 20px;
       }
 	  
 	  .wrapper-small {
@@ -85,14 +90,14 @@
       }
 
       .wrapper > * {
-        margin: 30px;
+        margin: 15px;
       }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <h1>Rodrigo Ramos</h1>
-	<div class="wrapper-small">
+    <div class="wrapper-small">
       <div class="small-box" onclick="window.open('https://linkedin.com/in/rodrigosoaresramos', '_blank')" style="width: 175px;">
         <h2>LinkedIn</h2>
       </div>
@@ -100,7 +105,7 @@
         <h2>GitHub</h2>
       </div>
     </div>
-	<h1>GitHub - Portfólio de Análise de Dados</h1>
+    <h1>Portfólio de Análise de Dados</h1>
     <div class="wrapper">
       <div class="box" onclick="window.open('https://github.com/ramos-rod/analise-de-dados-covid-owid', '_blank')">
         <h2>Data Analysis Covid-19</h2>
@@ -111,6 +116,6 @@
       <div class="box" onclick="window.open('https://github.com/ramos-rod/logistics-business-case-empowerdata', '_blank')">
         <h2>Logistics Business Case Empowerdata</h2>
       </div>
-	</div>
+    </div>
   </body>
 </html>
