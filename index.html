@@ -92,6 +92,31 @@
       .wrapper > * {
         margin: 15px;
       }
+	  
+	  @media only screen and (max-width: 600px) {
+		.box {
+			width: 80%;
+		}
+	  
+		.wrapper {
+			margin-top: 20px;
+		}
+	  
+		.wrapper > * {
+			margin: 10px;
+		}
+	  
+		.small-box {
+			width: 70px;
+			height: 40px;
+			margin: 5px;
+			font-size: 0.8rem;
+		}
+	  
+		.box h2 {
+			font-size: 2rem;
+		}
+	}
     </style>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   </head>
@@ -108,13 +133,13 @@
     <h1>Portfólio de Análise de Dados</h1>
     <div class="wrapper">
       <div class="box" onclick="window.open('https://github.com/ramos-rod/analise-de-dados-covid-owid', '_blank')">
-        <h2>Data Analysis Covid-19</h2>
+        <h2>Análise de Dados - Covid-19</h2>
       </div>
       <div class="box" onclick="window.open('https://github.com/ramos-rod/webscraping-amazon-powerbi', '_blank')">
-        <h2>Python Web Scraping Amazon CPUs</h2>
+        <h2>Raspagem de dados Amazon - CPUs</h2>
       </div>
       <div class="box" onclick="window.open('https://github.com/ramos-rod/logistics-business-case-empowerdata', '_blank')">
-        <h2>Logistics Business Case Empowerdata</h2>
+        <h2>Business Case de Logística - Exemplo Empowerdata</h2>
       </div>
     </div>
   </body>
